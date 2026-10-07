@@ -1,0 +1,7 @@
+{
+  "name": "ChatX - Real-Time Messaging",
+  "description": "Modern, fast, and feature-rich real-time messaging application with voice notes, media sharing, WebRTC calls, group chats, and 24h stories.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

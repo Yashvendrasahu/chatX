@@ -1,0 +1,385 @@
+{
+  "users": [
+    {
+      "id": "user_raju",
+      "name": "Raju Sharma",
+      "username": "raju",
+      "email": "raju@chatx.io",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Raju&backgroundColor=b6e3f4",
+      "bio": "Building the next-gen real-time web 🚀",
+      "phone": "+1 (555) 019-2834",
+      "online": true,
+      "lastSeen": "2026-10-07T08:35:31.326Z"
+    },
+    {
+      "id": "user_sarah",
+      "name": "Sarah Chen",
+      "username": "sarah_c",
+      "email": "sarah@chatx.io",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah&backgroundColor=ffd5dc",
+      "bio": "Product Designer • Crafting intuitive UI/UX ✨",
+      "phone": "+1 (555) 014-9982",
+      "online": true,
+      "lastSeen": "2026-10-07T08:35:31.327Z"
+    },
+    {
+      "id": "user_alex",
+      "name": "Alex Rivera",
+      "username": "alex_r",
+      "email": "alex@chatx.io",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex&backgroundColor=d1d4f9",
+      "bio": "Fullstack Dev • Coffee & WebSockets ☕",
+      "phone": "+1 (555) 018-4421",
+      "online": false,
+      "lastSeen": "2026-10-07T08:17:31.327Z"
+    },
+    {
+      "id": "user_priya",
+      "name": "Priya Patel",
+      "username": "priya_p",
+      "email": "priya@chatx.io",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya&backgroundColor=c0aede",
+      "bio": "Mobile Architect & Open Source Enthusiast 📱",
+      "phone": "+1 (555) 012-7733",
+      "online": true,
+      "lastSeen": "2026-10-07T08:35:31.327Z"
+    },
+    {
+      "id": "user_maya",
+      "name": "Maya Lin",
+      "username": "maya_l",
+      "email": "maya@chatx.io",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maya&backgroundColor=ffdfbf",
+      "bio": "Photography & AI Researcher 📸",
+      "phone": "+1 (555) 015-8829",
+      "online": false,
+      "lastSeen": "2026-10-07T07:30:31.327Z"
+    },
+    {
+      "id": "user_1791362145447_6ff5",
+      "name": "Satish Sahu",
+      "username": "satish_dev2",
+      "email": "satish724@example.com",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Satish%20Sahu&backgroundColor=b6e3f4",
+      "bio": "Hey there! I am using ChatX.",
+      "phone": "",
+      "online": true,
+      "lastSeen": "2026-10-07T08:35:45.447Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv_1791362145447",
+      "type": "direct",
+      "participants": [
+        "user_1791362145447_6ff5",
+        "user_raju"
+      ],
+      "pinnedBy": [],
+      "mutedBy": [],
+      "createdAt": "2026-10-07T08:35:45.447Z",
+      "updatedAt": "2026-10-07T08:35:45.473Z",
+      "lastMessage": {
+        "id": "msg_1791362145473_8jzk",
+        "conversationId": "conv_1791362145447",
+        "senderId": "user_1791362145447_6ff5",
+        "senderName": "Satish Sahu",
+        "senderAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Satish%20Sahu&backgroundColor=b6e3f4",
+        "type": "text",
+        "text": "Yes Raju! Received loud and clear on Device 2! 🚀",
+        "mediaUrl": null,
+        "fileName": null,
+        "fileSize": null,
+        "fileType": null,
+        "duration": null,
+        "replyTo": null,
+        "status": "sent",
+        "readBy": [
+          "user_1791362145447_6ff5"
+        ],
+        "reactions": {},
+        "createdAt": "2026-10-07T08:35:45.473Z"
+      }
+    },
+    {
+      "id": "conv_1",
+      "type": "direct",
+      "participants": [
+        "user_raju",
+        "user_sarah"
+      ],
+      "pinnedBy": [
+        "user_raju"
+      ],
+      "mutedBy": [],
+      "createdAt": "2026-10-06T08:35:31.327Z",
+      "updatedAt": "2026-10-07T08:31:31.327Z"
+    },
+    {
+      "id": "conv_2",
+      "type": "direct",
+      "participants": [
+        "user_raju",
+        "user_alex"
+      ],
+      "pinnedBy": [],
+      "mutedBy": [],
+      "createdAt": "2026-10-05T08:35:31.327Z",
+      "updatedAt": "2026-10-07T08:00:31.327Z"
+    },
+    {
+      "id": "conv_3",
+      "type": "group",
+      "name": "ChatX Core Engineering ⚡",
+      "avatar": "https://api.dicebear.com/7.x/identicon/svg?seed=ChatXCore&backgroundColor=c0aede",
+      "description": "Sprint planning and real-time infrastructure discussion",
+      "admins": [
+        "user_raju"
+      ],
+      "participants": [
+        "user_raju",
+        "user_sarah",
+        "user_alex",
+        "user_priya"
+      ],
+      "pinnedBy": [
+        "user_raju"
+      ],
+      "mutedBy": [],
+      "createdAt": "2026-10-04T08:35:31.327Z",
+      "updatedAt": "2026-10-07T08:23:31.327Z"
+    },
+    {
+      "id": "conv_4",
+      "type": "direct",
+      "participants": [
+        "user_raju",
+        "user_priya"
+      ],
+      "pinnedBy": [],
+      "mutedBy": [],
+      "createdAt": "2026-10-03T08:35:31.327Z",
+      "updatedAt": "2026-10-07T06:35:31.327Z"
+    },
+    {
+      "id": "conv_5",
+      "type": "direct",
+      "participants": [
+        "user_raju",
+        "user_maya"
+      ],
+      "pinnedBy": [],
+      "mutedBy": [],
+      "createdAt": "2026-10-02T08:35:31.327Z",
+      "updatedAt": "2026-10-07T03:35:31.327Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_101",
+      "conversationId": "conv_1",
+      "senderId": "user_sarah",
+      "type": "text",
+      "text": "Hey Raju! Have you checked out the new design system components for ChatX? 🎨",
+      "status": "read",
+      "readBy": [
+        "user_raju",
+        "user_sarah"
+      ],
+      "reactions": {
+        "👍": [
+          "user_raju"
+        ]
+      },
+      "createdAt": "2026-10-07T07:50:31.327Z"
+    },
+    {
+      "id": "msg_102",
+      "conversationId": "conv_1",
+      "senderId": "user_raju",
+      "type": "text",
+      "text": "Yes! The typography and dark mode contrast look phenomenal. Clean, modern, and snappy ⚡",
+      "status": "read",
+      "readBy": [
+        "user_sarah",
+        "user_raju"
+      ],
+      "createdAt": "2026-10-07T08:05:31.327Z"
+    },
+    {
+      "id": "msg_103",
+      "conversationId": "conv_1",
+      "senderId": "user_sarah",
+      "type": "text",
+      "text": "Awesome! Real-time WebSockets and voice notes are running seamlessly too.",
+      "status": "read",
+      "readBy": [
+        "user_raju",
+        "user_sarah"
+      ],
+      "createdAt": "2026-10-07T08:20:31.327Z"
+    },
+    {
+      "id": "msg_104",
+      "conversationId": "conv_1",
+      "senderId": "user_sarah",
+      "type": "text",
+      "text": "Are you free for a quick voice call later to review the group settings?",
+      "status": "delivered",
+      "readBy": [
+        "user_sarah"
+      ],
+      "createdAt": "2026-10-07T08:31:31.327Z"
+    },
+    {
+      "id": "msg_201",
+      "conversationId": "conv_2",
+      "senderId": "user_raju",
+      "type": "text",
+      "text": "Hey Alex, did you push the updated WebRTC signaling handlers?",
+      "status": "read",
+      "readBy": [
+        "user_alex",
+        "user_raju"
+      ],
+      "createdAt": "2026-10-07T07:15:31.327Z"
+    },
+    {
+      "id": "msg_202",
+      "conversationId": "conv_2",
+      "senderId": "user_alex",
+      "type": "text",
+      "text": "Yes, both audio and video streams work with direct peer connections and STUN fallback! 🚀",
+      "status": "read",
+      "readBy": [
+        "user_raju",
+        "user_alex"
+      ],
+      "createdAt": "2026-10-07T08:00:31.327Z"
+    },
+    {
+      "id": "msg_301",
+      "conversationId": "conv_3",
+      "senderId": "user_raju",
+      "type": "text",
+      "text": "Welcome everyone to the ChatX Core team group! 🚀",
+      "status": "read",
+      "readBy": [
+        "user_raju",
+        "user_sarah",
+        "user_alex",
+        "user_priya"
+      ],
+      "createdAt": "2026-10-07T06:35:31.327Z"
+    },
+    {
+      "id": "msg_302",
+      "conversationId": "conv_3",
+      "senderId": "user_priya",
+      "type": "text",
+      "text": "Excited to be here! The responsive layout across mobile and desktop is super fluid.",
+      "status": "read",
+      "readBy": [
+        "user_raju",
+        "user_sarah",
+        "user_alex",
+        "user_priya"
+      ],
+      "createdAt": "2026-10-07T07:55:31.327Z"
+    },
+    {
+      "id": "msg_303",
+      "conversationId": "conv_3",
+      "senderId": "user_alex",
+      "type": "text",
+      "text": "Just tested the media upload and 24h stories feature. Works like a charm.",
+      "status": "read",
+      "readBy": [
+        "user_raju",
+        "user_sarah",
+        "user_alex"
+      ],
+      "createdAt": "2026-10-07T08:23:31.327Z"
+    },
+    {
+      "id": "msg_1791362145447",
+      "conversationId": "conv_1791362145447",
+      "senderId": "user_raju",
+      "type": "text",
+      "text": "Welcome to ChatX, Satish Sahu! 🎉 Feel free to explore real-time messaging, audio calls, voice notes, and stories.",
+      "status": "delivered",
+      "readBy": [
+        "user_raju"
+      ],
+      "createdAt": "2026-10-07T08:35:45.447Z"
+    },
+    {
+      "id": "msg_1791362145462_pt2m",
+      "conversationId": "conv_1791362145447",
+      "senderId": "user_raju",
+      "senderName": "Raju Sharma",
+      "senderAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Raju&backgroundColor=b6e3f4",
+      "type": "text",
+      "text": "Hello Satish from Device 1! Testing real-time chat.",
+      "mediaUrl": null,
+      "fileName": null,
+      "fileSize": null,
+      "fileType": null,
+      "duration": null,
+      "replyTo": null,
+      "status": "sent",
+      "readBy": [
+        "user_raju"
+      ],
+      "reactions": {},
+      "createdAt": "2026-10-07T08:35:45.462Z"
+    },
+    {
+      "id": "msg_1791362145473_8jzk",
+      "conversationId": "conv_1791362145447",
+      "senderId": "user_1791362145447_6ff5",
+      "senderName": "Satish Sahu",
+      "senderAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Satish%20Sahu&backgroundColor=b6e3f4",
+      "type": "text",
+      "text": "Yes Raju! Received loud and clear on Device 2! 🚀",
+      "mediaUrl": null,
+      "fileName": null,
+      "fileSize": null,
+      "fileType": null,
+      "duration": null,
+      "replyTo": null,
+      "status": "sent",
+      "readBy": [
+        "user_1791362145447_6ff5"
+      ],
+      "reactions": {},
+      "createdAt": "2026-10-07T08:35:45.473Z"
+    }
+  ],
+  "statuses": [
+    {
+      "id": "status_1",
+      "userId": "user_sarah",
+      "type": "text",
+      "content": "🚀 Shipping the new ChatX dark theme today! Clean lines, zero clutter.",
+      "background": "linear-gradient(135deg, #059669 0%, #0d9488 100%)",
+      "textColor": "#ffffff",
+      "viewers": [
+        "user_raju"
+      ],
+      "createdAt": "2026-10-07T06:35:31.327Z",
+      "expiresAt": "2026-10-08T06:35:31.327Z"
+    },
+    {
+      "id": "status_2",
+      "userId": "user_priya",
+      "type": "text",
+      "content": "🎧 Coding with lo-fi beats & WebSockets. Loving the instant delivery.",
+      "background": "linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%)",
+      "textColor": "#ffffff",
+      "viewers": [],
+      "createdAt": "2026-10-07T03:35:31.327Z",
+      "expiresAt": "2026-10-08T03:35:31.327Z"
+    }
+  ]
+}

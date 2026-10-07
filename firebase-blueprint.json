@@ -1,0 +1,104 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Registered user profile in ChatX",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique user ID" },
+        "name": { "type": "string", "description": "User display name", "maxLength": 100 },
+        "username": { "type": "string", "description": "Unique handle", "maxLength": 50 },
+        "email": { "type": "string", "description": "User email address" },
+        "avatar": { "type": "string", "description": "Avatar image URL" },
+        "bio": { "type": "string", "description": "About status message", "maxLength": 200 },
+        "phone": { "type": "string", "description": "Phone number", "maxLength": 30 },
+        "online": { "type": "boolean", "description": "Whether user is currently online" },
+        "lastSeen": { "type": "string", "description": "ISO timestamp of last activity" }
+      },
+      "required": ["id", "name", "email"]
+    },
+    "Conversation": {
+      "title": "Conversation",
+      "description": "One-to-one or group chat conversation metadata",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique conversation ID" },
+        "type": { "type": "string", "enum": ["direct", "group"], "description": "Conversation type" },
+        "participants": { "type": "array", "description": "List of participant user IDs" },
+        "pinnedBy": { "type": "array", "description": "User IDs who pinned this chat" },
+        "mutedBy": { "type": "array", "description": "User IDs who muted this chat" },
+        "name": { "type": "string", "description": "Group title (for group chats)" },
+        "description": { "type": "string", "description": "Group description" },
+        "avatar": { "type": "string", "description": "Group avatar URL" },
+        "admins": { "type": "array", "description": "List of group admin user IDs" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "description": "Last update timestamp" },
+        "lastMessage": { "type": "object", "description": "Last message preview summary" }
+      },
+      "required": ["id", "type", "participants"]
+    },
+    "Message": {
+      "title": "Message",
+      "description": "Chat message item within a conversation",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique message ID" },
+        "conversationId": { "type": "string", "description": "Associated conversation ID" },
+        "senderId": { "type": "string", "description": "Sender user ID" },
+        "senderName": { "type": "string", "description": "Sender display name" },
+        "senderAvatar": { "type": "string", "description": "Sender avatar URL" },
+        "type": { "type": "string", "enum": ["text", "image", "video", "audio", "document", "system"], "description": "Message type" },
+        "text": { "type": "string", "description": "Text body of the message", "maxLength": 5000 },
+        "mediaUrl": { "type": "string", "description": "URL for uploaded media or audio" },
+        "fileName": { "type": "string", "description": "Filename for documents" },
+        "fileSize": { "type": "number", "description": "File size in bytes" },
+        "fileType": { "type": "string", "description": "MIME type" },
+        "duration": { "type": "number", "description": "Duration in seconds for voice notes" },
+        "replyTo": { "type": "object", "description": "Quoted message object" },
+        "status": { "type": "string", "enum": ["sent", "delivered", "read"], "description": "Delivery status" },
+        "readBy": { "type": "array", "description": "User IDs who read this message" },
+        "isEdited": { "type": "boolean", "description": "Whether message was edited" },
+        "isDeleted": { "type": "boolean", "description": "Whether message was deleted" },
+        "createdAt": { "type": "string", "description": "Timestamp when message was sent" }
+      },
+      "required": ["id", "conversationId", "senderId", "type"]
+    },
+    "Status": {
+      "title": "Status",
+      "description": "24-hour temporary story update",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique status ID" },
+        "userId": { "type": "string", "description": "Creator user ID" },
+        "type": { "type": "string", "enum": ["text", "image"], "description": "Story type" },
+        "content": { "type": "string", "description": "Text content" },
+        "mediaUrl": { "type": "string", "description": "Photo URL" },
+        "background": { "type": "string", "description": "Gradient or background color" },
+        "textColor": { "type": "string", "description": "Text color" },
+        "caption": { "type": "string", "description": "Optional caption" },
+        "viewers": { "type": "array", "description": "User IDs who viewed this status" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" },
+        "expiresAt": { "type": "string", "description": "Expiration timestamp (24h)" }
+      },
+      "required": ["id", "userId", "type", "createdAt", "expiresAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles indexed by UID"
+    },
+    "/conversations/{conversationId}": {
+      "schema": "Conversation",
+      "description": "Direct and group conversations"
+    },
+    "/conversations/{conversationId}/messages/{messageId}": {
+      "schema": "Message",
+      "description": "Messages sent in a conversation"
+    },
+    "/statuses/{statusId}": {
+      "schema": "Status",
+      "description": "Temporary 24h stories"
+    }
+  }
+}
